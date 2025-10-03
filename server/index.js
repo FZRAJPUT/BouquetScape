@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors())
 
 // API Routes
 app.use("/api/auth", authRoutes);
@@ -27,7 +27,7 @@ app.get("/",(req,res)=>{
     })
 })
 
-app.listen(4000,()=>{
+app.listen(process.env.PORT || 4000,()=>{
     connectDB(process.env.MONGO_URI);
-    console.log("server running on http://localhost:4000")
+    console.log("server running on 4000")
 })
