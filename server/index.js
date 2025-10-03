@@ -27,7 +27,9 @@ app.get("/",(req,res)=>{
     })
 })
 
-app.listen(process.env.PORT || 4000,()=>{
+const PORT = process.env.PORT || 4000
+
+app.listen(PORT,()=>{
     connectDB(process.env.MONGO_URI);
-    console.log("server running on 4000")
+    console.log("server running on : "+PORT)
 })
