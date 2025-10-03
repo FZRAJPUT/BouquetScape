@@ -22,7 +22,7 @@ export default function Header() {
           {/* Phone */}
           <div className="flex justify-center items-center gap-2 text-gray-700">
             <FiMail className="text-lg" />
-            <a href="mailto:examole@gmail.com" className="mb-1">examole@gmail.com</a>
+            <a href="mailto:bouq.scape@gmail.com" className="mb-1">bouq.scape@gmail.com</a>
           </div>
 
           {/* Search */}

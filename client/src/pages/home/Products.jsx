@@ -7,7 +7,7 @@ const Products = () => {
   const [loading, setLoading] = useState(false)
 
   const getProduct = async () => {
-    const api = import.meta.env.VITE_MY_API_KEY
+    const api = import.meta.env.VITE_MY_API
     setLoading(true)
     try {
       const res = await axios.get(
